@@ -1,0 +1,496 @@
+/home/astahl3
+(base) mkdir git_public
+(base) ls
+aikef_output                       Desktop    flyby_data      java.log.2383   matlab_crash_dump.2383-1   Matlab_files     papers    plots   SPICE         trajectory_plots.ipynb
+anaconda3                          Documents  git_public      java.log.27525  matlab_crash_dump.27525-1  Music            perl5     Public  spreadsheets  Videos
+Anaconda3-2022.05-Linux-x86_64.sh  Downloads  java.log.20141  java.log.44902  matlab_crash_dump.44902-1  ORB01_test1.txt  Pictures  python  Templates     visit
+(base) cd git_public
+(base) git init
+Initialized empty Git repository in /home/astahl3/git_public/.git/
+(base) ls -a
+.  ..  .git
+(base) cd ~
+(base) ls
+aikef_output                       Desktop    flyby_data      java.log.2383   matlab_crash_dump.2383-1   Matlab_files     papers    plots   SPICE         trajectory_plots.ipynb
+anaconda3                          Documents  git_public      java.log.27525  matlab_crash_dump.27525-1  Music            perl5     Public  spreadsheets  Videos
+Anaconda3-2022.05-Linux-x86_64.sh  Downloads  java.log.20141  java.log.44902  matlab_crash_dump.44902-1  ORB01_test1.txt  Pictures  python  Templates     visit
+(base) cd /
+(base) ls
+bin  boot  data1  data2  data3  dev  etc  home  lib  lib64  localdata  media  mnt  nethome  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+(base) cd data1
+(base) ls
+a  anaconda3  astahl  cpreston8  lost+found  matlab
+(base) cd ..
+(base) cd ~
+(base) cd git_public/
+(base) ls
+(base) ls -a
+.  ..  .git
+(base) git status
+# On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use "git add" to track)
+(base) cd ~
+(base) ls -a
+.                                  .bash_history  .conda     .emacs      .gimp-2.8           java.log.20141  .local                     .matplotlib        papers    python           Templates               .visit
+..                                 .bash_logout   .config    .emacs~     git_public          java.log.2383   .matlab                    .mozilla           perl5     .python_history  .thumbnails             .wget-hsts
+aikef_output                       .bash_profile  .dbus      .emacs.d    .ICEauthority       java.log.27525  matlab_crash_dump.2383-1   Music              Pictures  SPICE            trajectory_plots.ipynb  .Xauthority
+anaconda3                          .bashrc        Desktop    .esd_auth   .ipynb_checkpoints  java.log.44902  matlab_crash_dump.27525-1  .nv                .pki      spreadsheets     Videos
+Anaconda3-2022.05-Linux-x86_64.sh  .bashrc~       Documents  flyby_data  .ipython            .jupyter        matlab_crash_dump.44902-1  .oracle_jre_usage  plots     .ssh             .viminfo
+.astropy                           .cache         Downloads  .fop        .java               .lesshst        Matlab_files               ORB01_test1.txt    Public    .subversion      visit
+(base) cd .ssh
+(base) ls
+known_hosts
+(base) ssh-keygen -t ed25519 -C "aaron.m.stahl@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/astahl3/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/astahl3/.ssh/id_ed25519.
+Your public key has been saved in /home/astahl3/.ssh/id_ed25519.pub.
+The key fingerprint is:
+SHA256:yyQ6zny1uDjcouMp4VynEsGn5Qr4fOHEfG4z/8ZC0Sc aaron.m.stahl@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|                 |
+|.        .       |
+| o o    . E .    |
+|. *o  . S. o     |
+|+o o=o.+o.       |
+|++++== +oo       |
+|.=+**oO o o      |
+| o=+==.=.+.      |
++----[SHA256]-----+
+(base) eval "$(ssh-agent -s)"
+Agent pid 33331
+(base) ssh-add id_ed25519
+Identity added: id_ed25519 (aaron.m.stahl@gmail.com)
+(base) ls
+id_ed25519  id_ed25519.pub  known_hosts
+(base) less id_ed25519.pub
+(base) less id_ed25519
+(base) less id_ed25519.pub
+(base) ls
+id_ed25519  id_ed25519.pub  known_hosts
+(base) cd ..
+(base) ls
+aikef_output                       Desktop    flyby_data      java.log.2383   matlab_crash_dump.2383-1   Matlab_files     papers    plots   SPICE         trajectory_plots.ipynb
+anaconda3                          Documents  git_public      java.log.27525  matlab_crash_dump.27525-1  Music            perl5     Public  spreadsheets  Videos
+Anaconda3-2022.05-Linux-x86_64.sh  Downloads  java.log.20141  java.log.44902  matlab_crash_dump.44902-1  ORB01_test1.txt  Pictures  python  Templates     visit
+(base) cd git_public/
+(base) git add remote origin git@github.com:nillviod/public.git
+fatal: pathspec 'remote' did not match any files
+(base) git remote add origin git@github.com:nillviod/public.git
+(base) git remote
+origin
+(base) git -V
+Unknown option: -V
+usage: git [--version] [--help] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+(base) git -v
+Unknown option: -v
+usage: git [--version] [--help] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+(base) git --version
+git version 1.8.3.1
+(base) git branch -u origin/main
+fatal: branch 'master' does not exist
+(base) git branch
+(base) git status
+# On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use "git add" to track)
+(base) touch readme.txt
+(base) ls
+readme.txt
+(base) git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	readme.txt
+nothing added to commit but untracked files present (use "git add" to track)
+(base) git add readme.txt
+(base) git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   readme.txt
+#
+(base) git commit -m "created readme file"
+[master (root-commit) 5f06be6] created readme file
+ Committer: Stahl_Aaron_M_astahl3 <astahl3@eas-est-ssimon02.eas.gatech.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.txt
+(base) git config --global user.name "AS"
+(base) git config --global user.email "aaron.m.stahl@gmail.com"
+(base) git commit --amend --reset-author
+[master 84f2bf2] created readme file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.txt
+(base) git status
+# On branch master
+nothing to commit, working directory clean
+(base) git branch -u origin/main
+error: the requested upstream branch 'origin/main' does not exist
+hint: 
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint: 
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+(base) git branch -u origin/master
+error: the requested upstream branch 'origin/master' does not exist
+hint: 
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint: 
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+(base) git fetch
+The authenticity of host 'github.com (140.82.112.4)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+ECDSA key fingerprint is MD5:7b:99:81:1e:4c:91:a5:0d:5a:2e:2e:80:13:3f:24:ca.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,140.82.112.4' (ECDSA) to the list of known hosts.
+(base) git branch -u origin/master
+error: the requested upstream branch 'origin/master' does not exist
+hint: 
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint: 
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+(base) git branch -u origin/main
+error: the requested upstream branch 'origin/main' does not exist
+hint: 
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint: 
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+(base) git push -u origin main
+Warning: Permanently added the ECDSA host key for IP address '140.82.113.4' to the list of known hosts.
+error: src refspec main does not match any.
+error: failed to push some refs to 'git@github.com:nillviod/public.git'
+(base) git branch -M main
+(base) git status
+# On branch main
+nothing to commit, working directory clean
+(base) git push -u origin main
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 217 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:nillviod/public.git
+ * [new branch]      main -> main
+Branch main set up to track remote branch main from origin.
+(base) git remote
+origin
+(base) git branch test
+(base) git branch
+* main
+  test
+(base) git checkout test
+Switched to branch 'test'
+(base) git status
+# On branch test
+nothing to commit, working directory clean
+(base) touch testfile
+(base) get checkout main
+bash: get: command not found...
+Similar commands are::
+'git'
+'GET'
+(base) git checkout main
+Switched to branch 'main'
+(base) ls
+readme.txt  testfile
+(base) git status
+# On branch main
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	testfile
+nothing added to commit but untracked files present (use "git add" to track)
+(base) vim readme.txt 
+(base) git status
+# On branch main
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   readme.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	testfile
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) git add readme.txt
+(base) git status
+# On branch main
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   readme.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	testfile
+(base) git commit -m "updated readme"
+[main 6836687] updated readme
+ 1 file changed, 1 insertion(+)
+(base) git status
+# On branch main
+# Your branch is ahead of 'origin/main' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	testfile
+nothing added to commit but untracked files present (use "git add" to track)
+(base) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 5, done.
+Writing objects: 100% (3/3), 258 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:nillviod/public.git
+   84f2bf2..6836687  main -> main
+(base) git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+Did you mean this?
+	branch
+(base) git branch
+* main
+  test
+(base) git checkout test
+Switched to branch 'test'
+(base) git push -u origin test
+Warning: Permanently added the ECDSA host key for IP address '140.82.114.4' to the list of known hosts.
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'test' on GitHub by visiting:
+remote:      https://github.com/nillviod/public/pull/new/test
+remote: 
+To git@github.com:nillviod/public.git
+ * [new branch]      test -> test
+Branch test set up to track remote branch test from origin.
+(base) git pull
+Warning: Permanently added the ECDSA host key for IP address '140.82.113.3' to the list of known hosts.
+Already up-to-date.
+(base) git checkout main
+Switched to branch 'main'
+(base) git merge test
+Already up-to-date.
+(base) git branch
+* main
+  test
+(base) git checkout branch
+error: pathspec 'branch' did not match any file(s) known to git.
+(base) git checkout test
+Switched to branch 'test'
+(base) status
+bash: status: command not found...
+(base) git status
+# On branch test
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	testfile
+nothing added to commit but untracked files present (use "git add" to track)
+(base) git add testfile
+(base) git status
+# On branch test
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   testfile
+#
+(base) git commit -m "adding testfile"
+[test bc5af66] adding testfile
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 testfile
+(base) git status
+# On branch test
+# Your branch is ahead of 'origin/test' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+(base) git checkout main
+Switched to branch 'main'
+(base) git status
+# On branch main
+nothing to commit, working directory clean
+(base) git merge
+fatal: No commit specified and merge.defaultToUpstream not set.
+(base) git merge test
+Merge made by the 'recursive' strategy.
+ testfile | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 testfile
+(base) ls
+readme.txt  testfile
+(base) git branch -d test
+warning: not deleting branch 'test' that is not yet merged to
+         'refs/remotes/origin/test', even though it is merged to HEAD.
+error: The branch 'test' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D test'.
+(base) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Warning: Permanently added the ECDSA host key for IP address '140.82.112.3' to the list of known hosts.
+Counting objects: 6, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 523 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To git@github.com:nillviod/public.git
+   6836687..22a7d03  main -> main
+   84f2bf2..bc5af66  test -> test
+(base) git checkout test
+Switched to branch 'test'
+(base) git status
+# On branch test
+nothing to commit, working directory clean
+(base) git checout main
+git: 'checout' is not a git command. See 'git --help'.
+
+Did you mean this?
+	checkout
+(base) git checkout main
+Switched to branch 'main'
+(base) git branch -d test
+Deleted branch test (was bc5af66).
+(base) git branch -d origin/test
+error: branch 'origin/test' not found.
+(base) git push -d origin/test
+error: unknown switch `d'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    --delete              delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --recurse-submodules[=<check>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+
+(base) git push -d origin test
+error: unknown switch `d'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    --delete              delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --recurse-submodules[=<check>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+
+(base) git push --delete origin test
+To git@github.com:nillviod/public.git
+ - [deleted]         test
+(base) git config --global core editor "emacs"
+error: key does not contain a section: core
+(base) git config --global core.editor "emacs"
+(base) ls
+readme.txt  testfile
+(base) touch git_setup.txt
+(base) emacs git_setup.txt
+
+
